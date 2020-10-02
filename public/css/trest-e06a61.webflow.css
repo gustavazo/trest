@@ -14,7 +14,7 @@
   padding-bottom: 56.25%;
 }
 
-.section {
+/*.section {
   position: relative;
   z-index: 10;
   display: -webkit-box;
@@ -37,7 +37,15 @@
   background-size: auto;
   background-repeat: repeat;
   color: #5c5a5a;
-}
+}*/
+
+.section {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+} 
+  
 
 .image {
   position: relative;

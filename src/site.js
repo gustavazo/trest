@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
 import Refraccion from './threejs';
+import Header from "./header"
 
 const Site = () => {   
     return(
         <>
             <div>
-                <div data-collapse="medium" data-animation="default" data-duration={400} data-w-id="e1ffd33a-1d09-9390-9e50-4aeb1f2cac83" style={{ opacity: 0 }} role="banner" className="navbar w-nav"><a href="#" data-w-id="e1ffd33a-1d09-9390-9e50-4aeb1f2cac85" className="brand w-nav-brand"><img src="images/logoNew.png" width={81} alt="logoChico" /><div className="text-block">Software</div></a>
+                <Header />
+                <div id="home" className="section">
+                    
+                    <Refraccion />
+                    <div data-collapse="medium" data-animation="default" data-duration={400} data-w-id="e1ffd33a-1d09-9390-9e50-4aeb1f2cac83" style={{ opacity: 0, index: 9999 }} role="banner" className="navbar w-nav"><a href="#" data-w-id="e1ffd33a-1d09-9390-9e50-4aeb1f2cac85" className="brand w-nav-brand"><img src="images/logoNew.png" width={81} alt="logoChico" /><div className="text-block">Software</div></a>
                     <nav role="navigation" className="nav-menu w-nav-menu"><a href="#home" className="navlink w-nav-link">Home</a><a href="#promos" className="navlink w-nav-link">Promos</a><a href="#servicios" className="navlink w-nav-link">Servicios</a><a href="#sobreNos" className="navlink w-nav-link">Sobre nos</a><a href="#footer" className="navlink w-nav-link">Contacto</a></nav>
                     <div className="menu-button w-nav-button">
                         <div className="icon-2 w-icon-nav-menu" />
                     </div>
+                   
                 </div>
-                <div data-poster-url="https://uploads-ssl.webflow.com/5e303fa05ab6a393bac2fe5d/5e30570f65fb3eba6e4dc0f2_Mi película-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/5e303fa05ab6a393bac2fe5d/5e30570f65fb3eba6e4dc0f2_Mi película-transcode.mp4,https://uploads-ssl.webflow.com/5e303fa05ab6a393bac2fe5d/5e30570f65fb3eba6e4dc0f2_Mi película-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" className="background-video w-background-video w-background-video-atom"><video autoPlay loop style={{ backgroundImage: 'url("https://uploads-ssl.webflow.com/5e303fa05ab6a393bac2fe5d/5e30570f65fb3eba6e4dc0f2_Mi película-poster-00001.jpg")' }} muted playsInline data-wf-ignore="true" data-object-fit="cover"><source src="https://uploads-ssl.webflow.com/5e303fa05ab6a393bac2fe5d/5e30570f65fb3eba6e4dc0f2_Mi película-transcode.mp4" data-wf-ignore="true" /><source src="https://uploads-ssl.webflow.com/5e303fa05ab6a393bac2fe5d/5e30570f65fb3eba6e4dc0f2_Mi película-transcode.webm" data-wf-ignore="true" /></video></div>
-                <div data-w-id="e3d11553-4c3b-1133-ff7a-2e0c3cf24ba4" className="_2dofondo" />
-                <div id="home" className="section">
-                    <Refraccion />
                 </div>
+                
+                
+                
+                
                 <div id="promos" className="nuestrosproductos">
                     <h1 className="heading-4">QUE EL ENCIERRO NO CIERRE TUS POSIBILIDADES DE CRECER!</h1>
                     <h2 className="heading-5">Vendé online, ofrecé una App a tus clientes ó tené presencia en la web.</h2>
