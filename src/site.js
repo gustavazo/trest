@@ -1,23 +1,69 @@
 import React, { Component } from 'react';
 import Refraccion from './threejs';
-import Header from "./header"
+
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+
+
+
 
 const Site = () => {   
     return(
-        <>
+        <div>
             <div>
-                <Header />
-                <div id="home" className="section">
+                <div>
+                
                     
+                    
+
+                <div id="home" className="section">
+                        
+                            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                                <a className="navbar-brand" href="/#home">
+                                    <img src="/images/logoNew.png" width="auto" height="30" class="d-inline-block align-top" alt=""></img>
+
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent" style={{display: "flex", alignItems: "flex-start", justifyContent: "right"}}>
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Dropdown
+                                        </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </nav>
+                        
+
+
                     <Refraccion />
-                    <div data-collapse="medium" data-animation="default" data-duration={400} data-w-id="e1ffd33a-1d09-9390-9e50-4aeb1f2cac83" style={{ opacity: 0, index: 9999 }} role="banner" className="navbar w-nav"><a href="#" data-w-id="e1ffd33a-1d09-9390-9e50-4aeb1f2cac85" className="brand w-nav-brand"><img src="images/logoNew.png" width={81} alt="logoChico" /><div className="text-block">Software</div></a>
+                    
+                    {/*<div data-collapse="medium" data-animation="default" data-duration={400} data-w-id="e1ffd33a-1d09-9390-9e50-4aeb1f2cac83" style={{ opacity: 0, index: 9999 }} role="banner" className="navbar w-nav"><a href="#" data-w-id="e1ffd33a-1d09-9390-9e50-4aeb1f2cac85" className="brand w-nav-brand"><img src="images/logoNew.png" width={81} alt="logoChico" /><div className="text-block">Software</div></a>
                     <nav role="navigation" className="nav-menu w-nav-menu"><a href="#home" className="navlink w-nav-link">Home</a><a href="#promos" className="navlink w-nav-link">Promos</a><a href="#servicios" className="navlink w-nav-link">Servicios</a><a href="#sobreNos" className="navlink w-nav-link">Sobre nos</a><a href="#footer" className="navlink w-nav-link">Contacto</a></nav>
-                    <div className="menu-button w-nav-button">
-                        <div className="icon-2 w-icon-nav-menu" />
-                    </div>
+                    */}
                    
                 </div>
-                </div>
+            </div>
                 
                 
                 
@@ -209,7 +255,7 @@ const Site = () => {
                         </div><a data-w-id="a9112a9d-7627-625d-8434-964950775025" href="#" className="w-inline-block"><img src="images/Close-icon.png" alt="" className="image-5" /></a></div>
                 </div>
             </div>
-        </>    
+        </div>    
     )
 };
 
